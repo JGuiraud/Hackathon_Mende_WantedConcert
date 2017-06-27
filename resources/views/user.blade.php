@@ -2,7 +2,9 @@
 
 @section('content')
 
-<div class="container container-user">
+<div class="container-user">
+    <div class="container dispoliste">
+
     <div class="row">
         <div class="dropdown">
             <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
@@ -28,7 +30,7 @@
             <tbody>
                 @foreach ($dispos as $dispo)
                 <tr>
-                    <td style="text-align:center;"><a href="/user/{{$dispo->id}}" target="_blank"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>
+                    <td style="text-align:center;"><a href="/dispoDetails/{{$dispo->id}}" target="_blank"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>
                     <td>{{ $dispo->type }}</td>
                     <td>{{ $dispo->superficie }}</td>
                     <td>{{ $dispo->ville }}</td>
@@ -38,5 +40,7 @@
 
         </table>
     </div>
+    </div>
+
 </div>
 @endsection

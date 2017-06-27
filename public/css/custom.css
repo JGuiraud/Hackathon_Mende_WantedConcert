@@ -18,6 +18,27 @@ html {
     background-size: cover;
 }
 
+.dropdown>button {
+    background: red;
+}
+
+.container-user {
+    position: fixed;
+    background: url("../images/concertincamp_large.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+}
+
+.dropdown {
+    display: flex;
+    justify-content: center;
+}
+
 .navbar {
     margin-bottom: 0;
     position: fixed;
