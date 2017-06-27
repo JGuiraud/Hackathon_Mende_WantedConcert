@@ -11,7 +11,7 @@
             <br>
             <select class="selectPro form-control" name="type" id="">
                 <option value="terrain" selected>Terrain</option>
-                <option value="batiment">Batiment</option>
+                <option value="batiment">Bâtiment</option>
             </select>
         </div>
 
@@ -22,7 +22,7 @@
         </div>
 
         <div class="partform col-md-4 col-xs-12">
-            <label class="labelform" for="">Lieu : </label>
+            <label class="labelform" for="">Ville : </label>
             <br>
             <input type="text" name="lieu" value="Mende" id="inputtest" class="form-check-input">
         </div>
@@ -31,7 +31,6 @@
             <a class="buttonpro col-md-4" type="button" href='#map'>Suite</a>
         </div>
 
-    </form>
 {{-- </div> --}}
 
 </div>
@@ -68,6 +67,8 @@
     </div>
 
 </div>
+
+    </form>
 
 
 @endsection
