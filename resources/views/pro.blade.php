@@ -24,7 +24,7 @@
         <div class="partform col-md-4 col-xs-12">
             <label class="labelform" for="">Ville : </label>
             <br>
-            <input type="text" name="lieu" value="Mende" id="inputtest" class="form-check-input">
+            <input type="text" name="ville" value="Mende" id="inputtest" class="form-check-input">
         </div>
 
         <div class="containerButton">
