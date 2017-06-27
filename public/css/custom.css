@@ -19,7 +19,21 @@ html {
 }
 
 .dropdown>button {
-    background: red;
+    background: #43b70c;
+    width: 20vw;
+    height: 50px;
+    font-size: 20px;
+}
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.btn-primary.dropdown-toggle.focus, .open>.btn-primary.dropdown-toggle:focus, .open>.btn-primary.dropdown-toggle:hover {
+    background: #43b70c;
+    /*width: 20vw;
+    height: 50px;
+    font-size: 20px;*/
+}
+
+.btn-primary {
+    background: #43b70c;
+
 }
 
 .container-user {
@@ -34,15 +48,39 @@ html {
     /*justify-content: center;*/
 }
 
-.dropdown {
-    display: flex;
-    justify-content: center;
+.control-label {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.inputlogin {
+    width: 80%;
+}
+
+.panellogin {
+    text-align: center;
+    width: 100vw;
+    margin-top: 70px;
+}
+
+.loginbuttoncontainer {
+height: 50px;
+}
+
+.loginbuttoncontainer>button {
+    width: 20%
 }
 
 .navbar {
     margin-bottom: 0;
     position: fixed;
     width: 100%;
+}
+
+.form-horizontal {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
 }
 
 .container-formulaire {
@@ -97,7 +135,7 @@ input {
     display: flex;
     justify-content: center;
     align-self: center;
-    background: url("../images/concertincamp_footer_large.png") no-repeat center center;
+    background: url("../images/back.jpg") repeat center center;
     background-size: cover;
 }
 
@@ -116,6 +154,12 @@ input {
     border-radius: 5px;
     padding: 8px 80px 8px 80px;
     border: none;
+}
+
+.btn {
+    background: #43b70c;
+    border: none;
+    margin-top: -50px;
 }
 
 .container-buttonsend:before {
@@ -148,7 +192,11 @@ input {
     background: white;
     height: 50px;
     border: none;
+}
 
+/* Change the white to any color ;) */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
 }
 
 .form-check-input {
@@ -166,6 +214,15 @@ input {
 .buttonpro {
     padding-top: 8px;
     margin-top: 80px;
+    height: 50px;
+    font-size: 20px;
+    background:#43b70c;
+    border-radius: 5px;
+    color: white;
+}
+.buttonpro2 {
+    padding-top: 8px;
+    margin-top: 30px;
     height: 50px;
     font-size: 20px;
     background:#43b70c;
@@ -231,6 +288,12 @@ and (max-device-width : 667px)
 
 }
 
+.panellogin {
+    text-align: center;
+    width: 100vw;
+    margin-top: 115px;
+}
+
 .container-formulaire {
     /*text-align: center;*/
     display: flex;
@@ -270,7 +333,36 @@ font-weight: bold;
 }
 
 .footer>button {
-    background: #205400;
+    background:#43b70c;
+
+}
+
+.loginbuttoncontainer>button {
+    width: 50%
+}
+
+.container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background: red;*/
+    height: 100%;
+    width: 100%;
+    /*background-color: grey;*/
+    position: fixed;
+    background: url("../images/concertincamp2bis.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.container-user {
+        font-size: 16px;
+        background: url("../images/concertincamp2bis.jpg") no-repeat center center;
+    background-size: cover;
+
+}
+
+.dispoliste {
+    margin-top: 155px;
 }
 
 }

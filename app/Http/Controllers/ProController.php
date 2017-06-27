@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use App\Dispo;
 
 class ProController extends Controller
 {
@@ -80,5 +82,27 @@ class ProController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function postDispo(Request $request)
+    {
+        $dispo = new Dispo;
+        $dispo->type = $request->input('type');
+        $dispo->superficie = $request->input('superficie');
+        $dispo->ville = $request->input('ville');
+        $dispo->latVille = $request->input('latVille');
+        $dispo->lonVille = $request->input('lonVille');
+        $dispo->latA = $request->input('latA');
+        $dispo->lonA = $request->input('lonA');
+        $dispo->latB = $request->input('latB');
+        $dispo->lonB = $request->input('lonB');
+        // $dispo->dispos()->save($dispo);
+        $dispo->save();
+        return redirect()->route('proMerci');
+    }
+
+    public function proMerci()
+    {
+        return view('proMerci');
     }
 }
