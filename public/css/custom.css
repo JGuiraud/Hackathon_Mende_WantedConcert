@@ -1,3 +1,7 @@
+html {
+    overflow-x: hidden;
+}
+
 .container-login {
     display: flex;
     justify-content: center;
@@ -12,4 +16,31 @@
 
 .navbar {
     margin-bottom: 0;
+}
+
+.container-formulaire {
+    text-align: center;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+
+}
+.selectPro {
+    width: 50%;
+    height: 40px;
+}
+
+.form-check-input {
+    width: 80%;
+    height: 40px;
+    font-size: 30px;
+}
+
+.partform {
+    margin-top: 20px;
+}
+
+.buttonpro {
+    margin-top: 30px;
 }

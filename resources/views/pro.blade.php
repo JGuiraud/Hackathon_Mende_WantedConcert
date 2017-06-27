@@ -1,17 +1,37 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
+<div class="container-formulaire">
 
-                <div class="panel-body">
-Proriétaire lambda
-                </div>
-            </div>
+
+    <form method="post" action="{{ route('postDispo') }}" class="col-md-10 col-md-offset-1">
+        {{ csrf_field() }}
+
+        <div class="partform col-md-4 col-xs-12">
+            <label for="">Type de bien : </label>
+            <br>
+            <select class="selectPro form-check-input" name="type" id="">
+                <option value="terrain" selected>Terrain</option>
+                <option value="batiment">Batiment</option>
+            </select>
         </div>
-    </div>
+
+        <div class="partform col-md-4 col-xs-12">
+            <label for="">Superficie en m² : </label>
+            <br>
+            <input name="superficie" type="text" value="2000" class="form-check-input">
+        </div>
+
+        <div class="partform col-md-4 col-xs-12">
+            <label for="">Lieu : </label>
+            <br>
+            <input type="text" name="lieu" value="Mende" class="form-check-input">
+        </div>
+
+        <button class="buttonpro col-md-4 col-md-offset-4" href='#map'>Suite</button>
+
+    </form>
+
+
 </div>
 @endsection

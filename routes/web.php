@@ -21,6 +21,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['middleware'=>'pro'], function () {
     Route::get('/pro', 'ProController@index')->name('pro');
+    Route::post('/postDispo', 'ProController@postDispo')->name('postDispo');
 });
 
 Route::group(['middleware'=>'admin'], function () {
