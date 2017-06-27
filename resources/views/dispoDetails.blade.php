@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container container-user">
-    <div class="col-md-5 col-md-offset-1">
+<div class="container container-user col-xs-12">
+    <div class="col-md-5 col-md-offset-1 col-xs-12">
         <label>Type d'emplacement</label><br>
         <p>{{ $dispo->type }}</p>
         <label>Superficie</label><br>
@@ -10,7 +10,7 @@
         <label>Localité</label><br>
         <p>{{ $dispo->ville }}</p>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 col-xs-12">
         <div id="map" class="containerMap" ></div>
     </div>
 </div>
