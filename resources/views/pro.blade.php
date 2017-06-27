@@ -8,7 +8,7 @@
 
         <div class="partform col-md-4 col-xs-12 form-group selectContainer">
             <label class="labelform" for="">Type de bien : </label>
-            <br>
+
             <select class="selectPro form-control" name="type" id="">
                 <option value="terrain" selected>Terrain</option>
                 <option value="batiment">Bâtiment</option>
@@ -17,13 +17,13 @@
 
         <div class="partform col-md-4 col-xs-12">
             <label class="labelform" for="">Superficie en m² : </label>
-            <br>
+
             <input name="superficie" type="text" value="2000" class="form-check-input">
         </div>
 
         <div class="partform col-md-4 col-xs-12">
             <label class="labelform" for="">Ville : </label>
-            <br>
+
             <input type="text" name="ville" value="Mende" id="inputtest" class="form-check-input">
         </div>
 
