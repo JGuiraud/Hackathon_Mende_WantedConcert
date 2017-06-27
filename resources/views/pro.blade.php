@@ -34,31 +34,12 @@
 {{-- </div> --}}
 
 </div>
-
-<div class="containerMap" id="map">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <div class="containerMap" id="map">
 </div>
+<div class="buttondiv">
+    <button id="place">Selectionner une zone</button>
+</div>
+
 
 <div class="container-buttonsend">
 

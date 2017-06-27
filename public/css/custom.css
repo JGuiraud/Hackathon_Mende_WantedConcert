@@ -147,11 +147,26 @@ color: white;
 
 .containerMap {
     background: white;
+    height: 80vh;
+    /*width: 90vw;*/
 }
 
 .containerButton {
     height: 100px;
 
+
+}
+
+.buttondiv {
+    background-color: white;
+    display: flex;
+    height: auto;
+    justify-content: center;
+}
+
+.buttondiv>button {
+    margin: 10px;
+    border: none;
 }
 
 
