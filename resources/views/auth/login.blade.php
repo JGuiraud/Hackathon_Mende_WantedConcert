@@ -8,7 +8,7 @@
 
     <div class="{{ $errors->has('email') ? ' has-error' : '' }} col-md-4 col-md-offset-2">
         <label for="email" class="control-label">E-Mail Address</label>
-            <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
+            <input id="email" type="email" class="form-control inputlogin" name="email" value="{{ old('email') }}" required autofocus>
 
             @if ($errors->has('email'))
                 <span class="help-block">
@@ -19,7 +19,7 @@
 
     <div class="{{ $errors->has('password') ? ' has-error' : '' }} col-md-4">
         <label for="password" class="control-label">Password</label>
-            <input id="password" type="password" class="form-control" name="password" required>
+            <input id="password" type="password" class="form-control inputlogin" name="password" required>
 
             @if ($errors->has('password'))
                 <span class="help-block">
@@ -31,8 +31,8 @@
 
 
     {{-- <div class=""> --}}
-        <div class="col-md-12 loginbuttoncontainer">
-            <button type="submit" class="btn btn-primary ">
+        <div class="col-md-12 col-xs-12 loginbuttoncontainer">
+            <button type="submit" class="btn btn-primary buttonpro2">
                 Se connecter
             </button>
         </div>

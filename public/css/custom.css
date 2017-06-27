@@ -20,15 +20,21 @@ html {
 
 .control-label {
     font-size: 25px;
+    font-weight: 700;
+}
+
+.inputlogin {
+    width: 80%;
 }
 
 .panellogin {
     text-align: center;
     width: 100vw;
+    margin-top: 70px;
 }
 
 .loginbuttoncontainer {
-    margin-top: 30px;
+height: 50px;
 }
 
 .loginbuttoncontainer>button {
@@ -120,6 +126,12 @@ input {
     border: none;
 }
 
+.btn {
+    background: #43b70c;
+    border: none;
+    margin-top: -50px;
+}
+
 .container-buttonsend:before {
     content: "";
     position: fixed;
@@ -172,6 +184,15 @@ input:-webkit-autofill {
 .buttonpro {
     padding-top: 8px;
     margin-top: 80px;
+    height: 50px;
+    font-size: 20px;
+    background:#43b70c;
+    border-radius: 5px;
+    color: white;
+}
+.buttonpro2 {
+    padding-top: 8px;
+    margin-top: 30px;
     height: 50px;
     font-size: 20px;
     background:#43b70c;
@@ -234,6 +255,12 @@ and (max-device-width : 667px)
 
 }
 
+.panellogin {
+    text-align: center;
+    width: 100vw;
+    margin-top: 115px;
+}
+
 .container-formulaire {
     /*text-align: center;*/
     display: flex;
@@ -275,6 +302,23 @@ font-weight: bold;
 .footer>button {
     background:#43b70c;
 
+}
+
+.loginbuttoncontainer>button {
+    width: 50%
+}
+
+.container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background: red;*/
+    height: 100%;
+    width: 100%;
+    /*background-color: grey;*/
+    position: fixed;
+    background: url("../images/concertincamp2bis.jpg") no-repeat center center;
+    background-size: cover;
 }
 
 }
