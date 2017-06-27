@@ -30,5 +30,6 @@ Route::group(['middleware'=>'admin'], function () {
 
 Route::group(['middleware'=>'user'], function () {
     Route::get('/user', 'ListDispoController@getDispos')->name('user');
+    Route::get('/dispoDetails/{id}', 'dispoDetailsController@getDetails')->name('details');
 }
 );
