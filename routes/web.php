@@ -21,6 +21,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['middleware'=>'pro'], function () {
     Route::get('/pro', 'ProController@index')->name('pro');
+    Route::get('/proMerci', 'ProController@proMerci')->name('proMerci');
     Route::post('/postDispo', 'ProController@postDispo')->name('postDispo');
 });
 
@@ -30,5 +31,4 @@ Route::group(['middleware'=>'admin'], function () {
 
 Route::group(['middleware'=>'user'], function () {
     Route::get('/user', 'UserController@index')->name('user');
-}
-);
+});

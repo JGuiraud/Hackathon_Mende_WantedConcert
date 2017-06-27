@@ -18,10 +18,33 @@ html {
     background-size: cover;
 }
 
+.control-label {
+    font-size: 25px;
+}
+
+.panellogin {
+    text-align: center;
+    width: 100vw;
+}
+
+.loginbuttoncontainer {
+    margin-top: 30px;
+}
+
+.loginbuttoncontainer>button {
+    width: 20%
+}
+
 .navbar {
     margin-bottom: 0;
     position: fixed;
     width: 100%;
+}
+
+.form-horizontal {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
 }
 
 .container-formulaire {
@@ -76,7 +99,7 @@ input {
     display: flex;
     justify-content: center;
     align-self: center;
-    background: url("../images/concertincamp_footer_large.png") no-repeat center center;
+    background: url("../images/back.jpg") repeat center center;
     background-size: cover;
 }
 
@@ -127,7 +150,11 @@ input {
     background: white;
     height: 50px;
     border: none;
+}
 
+/* Change the white to any color ;) */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
 }
 
 .form-check-input {
@@ -246,7 +273,8 @@ font-weight: bold;
 }
 
 .footer>button {
-    background: #205400;
+    background:#43b70c;
+
 }
 
 }
