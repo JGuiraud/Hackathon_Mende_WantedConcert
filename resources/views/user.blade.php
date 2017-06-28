@@ -11,8 +11,10 @@
                 Lieux <span class="caret"></span>
             </button>
             <ul class="dropdown-menu">
-                <li><a href="#">Mende</a></li>
-                <li><a href="#">Badaroux</a></li>
+                <li><a href="/user">Toutes les villes</a></li>
+                @foreach ($cities as $city)
+                <li><a href="/user/{{ $city }}">{{ $city }}</a></li>
+                @endforeach
             </ul>
         </div>
     </div>
@@ -30,7 +32,7 @@
             <tbody>
                 @foreach ($dispos as $dispo)
                 <tr>
-                    <td style="text-align:center;"><a href="/dispoDetails/{{$dispo->id}}" target="_blank"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>
+                    <td style="text-align:center;"><a href="/dispoDetails/{{$dispo->id}}"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>
                     <td>{{ $dispo->type }}</td>
                     <td>{{ $dispo->superficie }}</td>
                     <td>{{ $dispo->ville }}</td>

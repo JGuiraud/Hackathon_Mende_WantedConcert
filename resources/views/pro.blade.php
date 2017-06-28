@@ -4,7 +4,7 @@
 <div class="container-formulaire">
 {{-- <div class="tests"> --}}
     <form method="POST" action="{{ route('postDispo') }}"
-    class="col-md-10 col-md-offset-1">
+    class="col-md-10 col-md-offset-1" id="form">
         {{ csrf_field() }}
 
         <div class="partform col-md-4 col-xs-12 form-group selectContainer">
@@ -30,10 +30,10 @@
 
         <input type="text" name="latVille" type="" hidden value="44.51667">
         <input type="text" name="lonVille" type="" hidden value="3.5">
-        <input type="text" name="latA" type="" hidden value="44.51611234843277">
-        <input type="text" name="lonA" type="" hidden value="3.5019457340240483">
-        <input type="text" name="latB" type="" hidden value="44.51558830517571">
-        <input type="text" name="lonB" type="" hidden value="3.502771854400635">
+        <input type="text" name="latA" id="latA" type="" hidden value="44.51611234843277">
+        <input type="text" name="lonA" type="" id="lonA" hidden value="3.5019457340240483">
+        <input type="text" name="latB" type="" id="latB" hidden value="44.51558830517571">
+        <input type="text" name="lonB" type="" id="lonB" hidden value="3.502771854400635">
 
         <div class="containerButton">
             <a class="buttonpro col-md-4" type="button" href='#map'>Suite</a>
@@ -52,7 +52,7 @@
         <div class="container-buttonsend">
 
             <div class="footer">
-                <button type="submit" class='boutonenvoyer'>Ajouter mon bien</button>
+                <button type="submit" class='boutonenvoyer' id="submit">Ajouter mon bien</button>
             </div>
 
         </div>
@@ -61,6 +61,6 @@
 </div>
 @endsection
 
-@section('extra-script')
+@section('extra-scripts')
     <script src="{{ asset('js/map.js') }}"></script>
 @endsection

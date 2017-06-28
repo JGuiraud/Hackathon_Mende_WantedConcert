@@ -1,6 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-    <p>merci</p>
+    <div class="mercicontainer">
+        <p>Merci pour votre contribution !</p>
+        <br>
+        <a href="/pro">Retour</a>
+    </div>
 @endsection
 

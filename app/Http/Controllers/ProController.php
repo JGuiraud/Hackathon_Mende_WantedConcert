@@ -89,7 +89,7 @@ class ProController extends Controller
         $dispo = new Dispo;
         $dispo->type = $request->input('type');
         $dispo->superficie = $request->input('superficie');
-        $dispo->ville = $request->input('ville');
+        $dispo->ville = strtolower($request->input('ville'));
         $dispo->latVille = $request->input('latVille');
         $dispo->lonVille = $request->input('lonVille');
         $dispo->latA = $request->input('latA');

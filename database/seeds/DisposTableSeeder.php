@@ -22,5 +22,16 @@ class DisposTableSeeder extends Seeder
             'latB' => '44.51558830517571',
             'lonB' => '3.502771854400635',
             ]);
+        DB::table('dispos')->insert([
+            'type' => 'batiment',
+            'superficie' => '250',
+            'ville' => 'badaroux',
+            'latVille' => '44.5412176',
+            'lonville' => '3.5409542',
+            'latA' => '44.5412176',
+            'lonA' => '3.5409542',
+            'latB' => '3.5409542',
+            'lonB' => '3.502771854400635',
+            ]);
     }
 }
