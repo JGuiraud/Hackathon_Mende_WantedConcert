@@ -48,6 +48,13 @@ html {
     /*justify-content: center;*/
 }
 
+.notfound {
+    background: url("../images/404.png") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
 .control-label {
     font-size: 25px;
     font-weight: 700;
