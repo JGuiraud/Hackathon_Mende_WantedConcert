@@ -38,6 +38,8 @@ map.on('mousedown', function (e) {
     if (state == "place") {
         pressed = true;
         coordsA = [e.latlng.lat, e.latlng.lng];
+        latAInput.value = e.latlng.lat;
+        lonAInput.value = e.latlng.lng;
         rect = L.rectangle([coordsA, coordsA], { color: "#ff7800", weight: 1 }).addTo(map);
     }
 });
@@ -55,6 +57,8 @@ map.on('mouseup', function (e) {
         coordsB = [e.latlng.lat, e.latlng.lng];
         toggleState();
         map.removeLayer(rect)
+        latBInput.value = e.latlng.lat;
+        lonBInput.value = e.latlng.lng;
         rect = L.rectangle([coordsA, coordsB], { color: "#ff7800", weight: 1 }).addTo(map);
         pressed = false;
     }
@@ -65,3 +69,17 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
+
+// Formulaire
+
+var formElement = document.getElementById("form");
+var submitBtn = document.getElementById("submit");
+var lonAInput = document.getElementById("lonA")
+var latAInput = document.getElementById("latA")
+var lonBInput = document.getElementById("lonB")
+var latBInput = document.getElementById("latB")
+
+submitBtn.addEventListener("click", function () {
+    console.log('submit');
+    formElement.submit()
+})

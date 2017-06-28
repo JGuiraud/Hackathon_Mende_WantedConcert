@@ -95,6 +95,26 @@ height: 50px;
     margin-top: 23px;
 }
 
+.footerGeneral {
+    /*padding-top: 400px;*/
+    /*z-index: 100;*/
+    display: none;
+    text-align: center;
+    background: #90dfdc;
+    color: white;
+}
+
+.mercicontainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/back.jpg') repeat center center;
+    background-size: cover;
+    font-size: 25px;
+}
+
 .map2 {
     margin-top: 110px;
     padding-left: 30px;
