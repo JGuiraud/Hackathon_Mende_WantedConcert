@@ -13,7 +13,25 @@ class listDispoController extends Controller {
 
     public function getDispos(Request $request){
         $dispos = Dispo::All();
-        return view('user', ['dispos'=>$dispos]);
+        $cities = [];
+        foreach ($dispos as $dispo){
+            if (!in_array(strtolower($dispo->ville), $cities)) {
+                $cities[] = strtolower($dispo->ville);
+            }
+        }
+        return view('user', ['dispos'=>$dispos, 'cities'=>$cities]);
+    }
+
+    public function getDisposByCity(Request $request, $city){
+        $dispos = Dispo::All();
+        $cities = [];
+        foreach ($dispos as $dispo){
+            if (!in_array(strtolower($dispo->ville), $cities)) {
+                $cities[] = strtolower($dispo->ville);
+            }
+        }
+        $dispos = Dispo::All()->where('ville', '=', $city);
+        return view('user', ['dispos'=>$dispos, 'cities'=>$cities]);
     }
 }
 ?>
