@@ -1,6 +1,7 @@
 Wanted Concert - Concert In Camp
 ===================
 
+Hackathon Simplon 2017 - Mende
 
 Lorsqu'il s'agit d'événements artistiques musicaux, les grandes villes de France sont les mieux fournies. La volonté de Wanted Concert est de dynamiser l'économie locale et rurale au travers du projet Concert In Camp en mettant en relation le monde artistique et les propriétaires de terrains de manière étique et solidaire.
 
