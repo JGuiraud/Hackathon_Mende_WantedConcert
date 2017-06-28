@@ -12,6 +12,7 @@ map.setMaxBounds([
     [51.069017, 2.625732],
     [48.908059, 8.294678]
 ]);
+map.dragging.disable();
 function toggleState() {
     if (state == "move") {
         state = "place";
@@ -24,7 +25,9 @@ function toggleState() {
     } else {
         state = "move";
         mapElement.style.cursor = "grab";
-        map.dragging.enable();
+        // map.dragging.enable();
+        map.dragging.disable();
+
     }
 }
 

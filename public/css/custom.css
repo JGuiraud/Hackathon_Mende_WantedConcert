@@ -95,8 +95,26 @@ height: 50px;
     margin-top: 23px;
 }
 
+.map2 {
+    margin-top: 110px;
+    padding-left: 30px;
+    margin-right: 30px;
+    height: 75%;
+    width: 100%;
+}
+
+.infodetail {
+    margin-top: 180px;
+    margin-left: 0px;
+    font-size: 20px;
+    margin-right: 0px;
+    width: 20%;
+    text-align: right;
+    font-size: 22px;
+}
+
 .container-formulaire>form {
-        margin-top: 170px;
+    margin-top: 170px;
 }
 
 input {
@@ -274,6 +292,10 @@ color: white;
     padding-top: 5em;
 }
 
+.dropdown, .table {
+    text-transform: capitalize;
+}
+
 @media only screen
 and (min-device-width : 375px)
 and (max-device-width : 667px)
@@ -339,6 +361,24 @@ font-weight: bold;
 .footer>button {
     background:#43b70c;
 
+}
+
+.map2 {
+    margin-top: 110px;
+    padding-left: 50px;
+    margin-right: -30px;
+    height: 75%;
+    width: 90%;
+}
+
+.infodetail {
+    margin-top: 180px;
+    margin-left: 20px;
+    font-size: 20px;
+    margin-right: -30px;
+    text-align: left;
+    font-size: 18px;
+    width: 40%;
 }
 
 .loginbuttoncontainer>button {
